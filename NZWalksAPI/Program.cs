@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<NZWalksDbContext>(options => 
 options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString")));
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
