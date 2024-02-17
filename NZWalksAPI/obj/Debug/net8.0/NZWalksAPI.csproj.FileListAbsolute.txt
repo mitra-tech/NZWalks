@@ -135,3 +135,4 @@ C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\refint\NZWalksAP
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.pdb
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.genruntimeconfig.cache
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\ref\NZWalksAPI.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\AutoMapper.dll

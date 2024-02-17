@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "idQF62+Rrl0jQf5562cJGtX3qDuAhkv11VBKQNOXjmStE68OeCpGtahSrWqKXjhVrn4sJUSV7Od/HnGQCwf6Vg==",
+  "dgSpecHash": "EqjQmDff/daoO8WFBobZr0FIzsuDxr+CYfCCcgPukHa/FOM8Dbva5NZlPw/rI3+aLOykRc6pD9st5a9GF1buqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\source\\repos\\NZWalks\\NZWalksAPI\\NZWalksAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mitra\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
