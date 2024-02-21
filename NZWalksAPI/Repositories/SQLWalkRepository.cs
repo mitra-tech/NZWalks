@@ -31,7 +31,7 @@ namespace NZWalksAPI.Repositories
         public async Task<Walk?> UpdateAsync(Guid id, Walk walk)
         {
            var existingWalk = await dbContext.Walks.FirstOrDefaultAsync(x => x.Id == id);
-            if (existingWalk != null) { return null; }
+            if (existingWalk == null) { return null; }
 
             existingWalk.Name = walk.Name;
             existingWalk.Description = walk.Description;
@@ -42,6 +42,22 @@ namespace NZWalksAPI.Repositories
 
             await dbContext.SaveChangesAsync();
 
+            return existingWalk;
+        }
+
+        public async Task<Walk?> DeleteAsync(Guid id)
+        {
+            var existingWalk = await dbContext.Walks.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (existingWalk == null)
+            {
+                return null;
+            }
+
+            dbContext.Walks.Remove(existingWalk);
+            await dbContext.SaveChangesAsync();
+
+            // returning the deleted walk back
             return existingWalk;
         }
     }
