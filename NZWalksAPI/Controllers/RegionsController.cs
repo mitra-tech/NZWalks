@@ -7,6 +7,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using NZWalksAPI.Repositories;
 using AutoMapper;
+using NZWalksAPI.CustomActionFilters;
 
 namespace NZWalksAPI.Controllers
 {
@@ -61,10 +62,10 @@ namespace NZWalksAPI.Controllers
         // POST to Create New Region
         // POST: https://localhost:portnumber/api/regions
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> Create([FromBody] AddRegionsRequestDto addRegionsRequestDto)
         {
-            if (ModelState.IsValid)
-            {
+            
                 // Map ot Convert the DTO to Domain Model
                 var regionDomainModel = mapper.Map<Region>(addRegionsRequestDto);
 
@@ -75,21 +76,16 @@ namespace NZWalksAPI.Controllers
                 var regionDto = mapper.Map<RegionDto>(regionDomainModel);
 
                 return CreatedAtAction(nameof(GetById), new { id = regionDto.Id }, regionDto);
-            }
-            else
-            {
-                return BadRequest(ModelState);
-            }
         }
 
         // Update region
         // PUT: https://localhost:portnumber/api/regions/{id}
         [HttpPut]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto )
+        [ValidateModel]
+        public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
 
-            if (ModelState.IsValid)
             {
                 // Map DTO to Domain Model
                 var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
@@ -104,11 +100,10 @@ namespace NZWalksAPI.Controllers
                 var regionDto = mapper.Map<RegionDto>(regionDomainModel);
 
                 return Ok(regionDto);
+
             }
-            else { return BadRequest(ModelState); }
+
         }
-
-
         // Delete region
         // DELETE: https://localhost:portnumber/api/regions/{id}
         [HttpDelete]
