@@ -8,12 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using NZWalksAPI.Repositories;
 using AutoMapper;
 using NZWalksAPI.CustomActionFilters;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NZWalksAPI.Controllers
 {
     // https://localhost:1234/api/regions
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RegionsController : ControllerBase
     {
         private readonly NZWalksDbContext dbContext;

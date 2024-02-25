@@ -136,3 +136,10 @@ C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.pdb
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.genruntimeconfig.cache
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\ref\NZWalksAPI.dll
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
