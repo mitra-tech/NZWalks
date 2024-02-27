@@ -129,7 +129,6 @@ C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\staticwebassets\
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NZWalksAPI.props
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\scopedcss\bundle\NZWalksAPI.styles.css
-C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.csproj.CopyComplete
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.dll
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\refint\NZWalksAPI.dll
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.pdb
@@ -143,3 +142,4 @@ C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.AspNet
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\mitra\source\repos\NZWalks\NZWalksAPI\obj\Debug\net8.0\NZWalksAPI.csproj.Up2Date
