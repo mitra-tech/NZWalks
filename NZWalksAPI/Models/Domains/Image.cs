@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NZWalksAPI.Models
+namespace NZWalksAPI.Models.Domains
 {
     public class Image
     {
@@ -12,8 +12,8 @@ namespace NZWalksAPI.Models
         public string FileName { get; set; }
         public string? FileDescription { get; set; }
         public string FileExtension { get; set; }
-        public long  FileSizeInBytes { get; set; }
-        public string  FilePath { get; set; }
+        public long FileSizeInBytes { get; set; }
+        public string FilePath { get; set; }
 
     }
 }
