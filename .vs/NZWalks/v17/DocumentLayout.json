@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{33B92221-1C8C-4C3C-931A-4D9BAC548709}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{33B92221-1C8C-4C3C-931A-4D9BAC548709}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\mitra\\source\\repos\\nzwalks\\nzwalksapi\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33B92221-1C8C-4C3C-931A-4D9BAC548709}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33B92221-1C8C-4C3C-931A-4D9BAC548709}|NZWalksAPI\\NZWalksAPI.csproj|c:\\users\\mitra\\source\\repos\\nzwalks\\nzwalksapi\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33B92221-1C8C-4C3C-931A-4D9BAC548709}|NZWalksAPI\\NZWalksAPI.csproj|solutionrelative:nzwalksapi\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\mitra\\source\\repos\\NZWalks\\NZWalksAPI\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "NZWalksAPI\\Models\\DTO\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\mitra\\source\\repos\\NZWalks\\NZWalksAPI\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeToolTip": "NZWalksAPI\\Models\\DTO\\LoginRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T01:00:06.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RegisterRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\mitra\\source\\repos\\NZWalks\\NZWalksAPI\\Models\\DTO\\RegisterRequestDto.cs",
               "RelativeDocumentMoniker": "NZWalksAPI\\Models\\DTO\\RegisterRequestDto.cs",
@@ -41,7 +58,7 @@
               "RelativeDocumentMoniker": "NZWalksAPI\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\mitra\\source\\repos\\NZWalks\\NZWalksAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "NZWalksAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAARAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-27T21:49:57.941Z",
               "EditorCaption": ""
