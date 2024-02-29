@@ -38,9 +38,7 @@ namespace NZWalksAPI.Controllers
         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll() 
         {
-           try
-            {
-                throw new Exception("This is a custom exception.");
+           
                 // Get Data From Database - Domain models
                 var regionsDomainModels = await regionRepository.GetAllAsync();
 
@@ -49,14 +47,7 @@ namespace NZWalksAPI.Controllers
 
                 // Return DTOs to Client
                 return Ok(regionsDto);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, ex.Message);
-                throw;
-            };
-
-           
+                      
         }
 
         // GET SINGLE REGION (Get Refion By ID)
@@ -107,7 +98,6 @@ namespace NZWalksAPI.Controllers
         [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
-
             {
                 // Map DTO to Domain Model
                 var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);

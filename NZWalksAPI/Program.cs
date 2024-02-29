@@ -10,11 +10,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.FileProviders;
 using Serilog;
+using Microsoft.AspNetCore.Diagnostics;
+using NZWalksAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var logger = new LoggerConfiguration().WriteTo.Console().MinimumLevel.Warning().CreateLogger();
+var logger = new LoggerConfiguration().WriteTo.Console().WriteTo.File("Logs/NZWalks_Log.txt", rollingInterval: RollingInterval.Day).MinimumLevel.Warning().CreateLogger();
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
@@ -113,11 +115,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Add the global error handler
+app.UseMiddleware<ExceptionHandlerMiddlewares>();
+
 app.UseHttpsRedirection();
 
 // Add authentication to the middleware pipeline
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.UseStaticFiles(new StaticFileOptions
