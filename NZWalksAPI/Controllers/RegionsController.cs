@@ -9,6 +9,7 @@ using NZWalksAPI.Repositories;
 using AutoMapper;
 using NZWalksAPI.CustomActionFilters;
 using Microsoft.AspNetCore.Authorization;
+using System.Text.Json;
 
 namespace NZWalksAPI.Controllers
 {
@@ -21,27 +22,41 @@ namespace NZWalksAPI.Controllers
         private readonly NZWalksDbContext dbContext;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
+        private readonly ILogger<RegionsController> logger;
 
-        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper, ILogger<RegionsController> logger)
         {
             this.dbContext = dbContext;
             this.regionRepository = regionRepository;
             this.mapper = mapper;
+            this.logger = logger;
         }
+
         // GET ALL REGIONS
         // GET: https://localhost:portnumber/api/regions
         [HttpGet]
         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll() 
         {
-            // Get Data From Database - Domain models
-            var regionsDomainModels = await regionRepository.GetAllAsync();
+           try
+            {
+                throw new Exception("This is a custom exception.");
+                // Get Data From Database - Domain models
+                var regionsDomainModels = await regionRepository.GetAllAsync();
 
-            // Map Domain Models to DTOs
-            var regionsDto = mapper.Map<List<RegionDto>>(regionsDomainModels);
+                // Map Domain Models to DTOs
+                var regionsDto = mapper.Map<List<RegionDto>>(regionsDomainModels);
 
-            // Return DTOs to Client
-            return Ok(regionsDto);
+                // Return DTOs to Client
+                return Ok(regionsDto);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, ex.Message);
+                throw;
+            };
+
+           
         }
 
         // GET SINGLE REGION (Get Refion By ID)
